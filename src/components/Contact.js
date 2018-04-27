@@ -13,23 +13,33 @@ export default class Contact extends React.Component {
             <Grid>
                 <Jumbotron>
                     <h2 style={{fontFamily: 'Josefin Sans'}}>Yhteystiedot: </h2>
-                    <div style={{textAlign: 'left'}}>
-                        <p><u>Sähköposti</u>: voittamisenkulttuuriry@outlook.com</p>
-                        <p><u>Hallituksen puheenjohtaja</u>: Ilkka Lehtinen 0400 355 201</p>
-                        <p><u>Varapuheenjohtaja</u>: Niilo Selin</p>
-                        <p><u>Sihteeri</u>: Hannu Aro 050 3289319</p>
-                        <p><u>Rahastonhoitaja</u>: Mari Lehtonen 050 5678 719</p>
-                    </div>
-                    <br/>
-
-                    <h2 style={{fontFamily: 'Josefin Sans'}}>Tai suora yhteydenotto: </h2>
-                    <form className="messageForm">
-                        <p><input style={styleSheet.input} type="text" placeholder="nimi"/></p>
-                        <p><input style={styleSheet.input} type="text" placeholder="sähköposti"/></p>
-                        <p><textarea style={styleSheet.input} type="text" placeholder="Uusi viesti" rows="8" cols="45"/></p>
-                        <div><button style={styleSheet.button} type="submit">Lähetä</button></div>
-                    </form>
                 </Jumbotron>
+                <Row>
+                    <Col sm={12} md={12}>
+                        <div style={styleSheet.main}>
+                            <p><u>Sähköposti</u>: voittamisenkulttuuriry@outlook.com</p>
+                            <p><u>Hallituksen puheenjohtaja</u>: Ilkka Lehtinen 0400 355 201</p>
+                            <p><u>Varapuheenjohtaja</u>: Niilo Selin</p>
+                            <p><u>Sihteeri</u>: Hannu Aro 050 3289319</p>
+                            <p><u>Rahastonhoitaja</u>: Mari Lehtonen 050 5678 719</p>
+                        </div>
+                    </Col>
+                </Row>
+
+                <Jumbotron>
+                    <h2 style={{fontFamily: 'Josefin Sans'}}>Tai suora yhteydenotto: </h2>
+                </Jumbotron>
+                <Row>
+                    <Col sm={12} md={12}>
+                        <form className="messageForm">
+                            <p><input style={styleSheet.input} type="text" placeholder="nimi"/></p>
+                            <p><input style={styleSheet.input} type="text" placeholder="sähköposti"/></p>
+                            <p><textarea style={styleSheet.input} type="text" placeholder="Uusi viesti" rows="8" cols="45"/></p>
+                            <div><button style={styleSheet.button} type="submit">Lähetä</button></div>
+                        </form>
+                    </Col>
+                </Row>
+
             </Grid>
         )
     }
@@ -47,6 +57,13 @@ const styleSheet = {
         color: 'black',
         backgroundColor: 'white',
         fontFamily: 'Josefin Sans',
-        fontSize: '1.5em'
+        fontSize: '1.5em',
+        marginBottom: '1em'
+    },
+    main: {
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: '1.2em',
+        textAlign: 'left'
     }
 }
