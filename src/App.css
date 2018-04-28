@@ -4,7 +4,7 @@
 
 .App-logo {
   animation: App-logo-spin infinite 10s linear;
-  height: 80px;
+  height: 4vw;
 }
 
 .App-header {
@@ -15,7 +15,7 @@
 }
 
 .App-title {
-  font-size: 3em;
+  font-size: 3vw;
   font-weight: bolder;
   font-family: Josefin Sans;
   color: #8A007F;

@@ -63,17 +63,17 @@ export default class RulesModal extends React.Component {
                             1. Yhdistyksen nimi ja kotipaikka <br/>
                             Yhdistyksen nimi on Voittamisen Kulttuuri ry ja sen kotipaikka on Helsinki.<br/><br/>
 
-                            2. Tarkoitus ja toiminnan laatu
+                            2. Tarkoitus ja toiminnan laatu <br/>
                             Yhdistyksen tarkoituksena on edistää urheilullista kehitystä ja kilpailutoimintaa.
                             Tarkoituksena toteuttamiseksi yhdistys järjestää valmennusta ja kansallisia kilpailuja.
                             Toimintansa tukemiseksi yhdistys perii vuotuista jäsenmaksua ja liittymismaksua sekä järjestää
                             arpajaisia, myyjäisiä ja harjoittaa kahvilatoimintaa järjestämiensä kilpailujen yhteydessä.<br/><br/>
 
-                            3. Jäsenet
+                            3. Jäsenet<br/>
                             Yhdistykseen jäseneksi voi liittyä jokainen, joka hyväksyy yhdistyksen tarkoituksen ja säännöt.
                             Jäsenet hyväksyy hakemuksesta yhdistyksen hallitus.<br/><br/>
 
-                            4. Jäsenen eroaminen ja erottaminen
+                            4. Jäsenen eroaminen ja erottaminen<br/>
                             Jäsenellä on oikeus erota yhdistyksestä ilmoittamalla siitä kirjallisesti hallitukselle tai sen
                             puheenjohtajalle, taikka ilmoittamalla erosta
                             yhdistyksen kokouksessa merkittäväksi pöytäkirjaan. Hallitus voi erottaa jäsenen yhdistyksestä, jos
@@ -83,10 +83,10 @@ export default class RulesModal extends React.Component {
                             tai sen ulkopuolella huomattavasti vahingoittanut yhdistystä tai ei enää täytä laissa taikka yhdistyksen
                             säännöissä mainittuja jäsenyyden ehtoja.<br/><br/>
 
-                            5. Liittymis- ja jäsenmaksu
+                            5. Liittymis- ja jäsenmaksu<br/>
                             Jäseniltä perittävän liittymismaksun ja vuotuisien jäsenmaksun suuruudesta päättää vuosikokous.<br/><br/>
 
-                            6. Hallitus
+                            6. Hallitus<br/>
                             Yhdistyksen asioita hoitaa hallitus, johon kuuluu vuosikokouksessa valitut puheenjohtaja ja 2 muuta
                             varsinaista jäsentä sekä 2 varajäsentä.
                             Hallituksen toimikausi on vuosikokousten välinen aika. Hallitus valitsee keskuudestaan
@@ -100,18 +100,18 @@ export default class RulesModal extends React.Component {
                             ehdottomalla ääntenenemmistöllä. äänten mennessä tasan ratkaisee puheenjohtajan ääni, vaaleissa
                             kuitenkin arpa.<br/><br/>
 
-                            7. Yhdistyksen nimen kirjoittaminen
+                            7. Yhdistyksen nimen kirjoittaminen<br/>
                             Yhdistyksen nimen kirjoittaa hallituksen puheenjohtaja, varapuheenjohtaja, sihteeri tai rahastonhoitaja,
                             kaksi yhdessä.<br/><br/>
 
-                            8. Tilikausi ja toiminnantarkastus / tilintarkastus
+                            8. Tilikausi ja toiminnantarkastus / tilintarkastus<br/>
                             Yhdistyksen tilikausi on kalenterivuosi. Tilinpäätös tarvittavine asiakirjoineen ja hallituksen
                             vuosikertomus on annettava toiminnantarkastajalle/
                             tilintarkastajalle viimeistään kuukautta ennen vuosikokousta. Toiminnantarkastajien/tilintarkastajien
                             tulee antaa kirjallinen lausuntonsa
                             viimeistään kaksi viikkoa ennen vuosikokousta hallitukselle.<br/><br/>
 
-                            9. Yhdistyksen kokoukset
+                            9. Yhdistyksen kokoukset<br/>
                             Yhdistyksen vuosikokous pidetään vuosittain hallituksen määräämänä päivänä tammi-toukokuussa.
                             Ylimääräinen kokous pidetään, kun yhdistyksen
                             kokous niin päättää tai kun hallitus katsoo siihen olevan aihetta tai kun vähintään kymmenesosa (1/10)
@@ -124,7 +124,7 @@ export default class RulesModal extends React.Component {
                             annetuista äänistä. äänten mennessä
                             tasan ratkaisee kokouksen puheenjohtajan ääni, vaaleissa kuitenkin arpa.<br/><br/>
 
-                            10. Yhdistyksen kokousten koollekutsuminen
+                            10. Yhdistyksen kokousten koollekutsuminen<br/>
                             Hallituksen on kutsuttava yhdistyksen kokoukset koolle vähintään seitsämän vuorokautta ennen jäsenille
                             postitetuilla kirjeillä, yhdistyksen
                             kotipaikkakunnalla ilmestyvässä sanomalehdessä tai sähköpostitse.<br/><br/>
