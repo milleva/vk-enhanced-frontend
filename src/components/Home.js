@@ -20,13 +20,13 @@ export default class Home extends React.Component {
                     <Image src={mapImage} responsive rounded/>
                     <br/>
                     <Row>
-                        <Col xs={6} md={4}>
+                        <Col xs={4} md={4}>
                             <Image src={logoOne} responsive thumbnail />
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={4} md={4}>
                             <Image src={logoTwo} responsive thumbnail/>
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={4} md={4}>
                             <Image src={logoThree} responsive thumbnail />
                         </Col>
                     </Row>

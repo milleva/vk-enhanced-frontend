@@ -60,10 +60,10 @@ export default class Contact extends React.Component {
                 </Row>
 
                 <Row>
-                    <Col xs={1} md={1}>
+                    <Col xs={3} md={1}>
                         <a title="Instagramissa" target="_blank" href="https://www.instagram.com/voittamisenkulttuuriry/"><Image src={insta} responsive /></a>
                     </Col>
-                    <Col xs={1} md={1}>
+                    <Col xs={3} md={1}>
                         <a title="Sähköposti" target="_blank" href="mailto:vk@vkry.info"><Image src={email} responsive /></a>
                     </Col>
                 </Row>
