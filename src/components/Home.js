@@ -31,7 +31,6 @@ export default class Home extends React.Component {
                         </Col>
                     </Row>
                 </Jumbotron>
-                <div style={styleSheet.tag}>Custom software craft by <b>Miller Solutions</b></div>
             </Grid>
         )
     }

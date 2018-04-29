@@ -30,9 +30,10 @@ export default class Contact extends React.Component {
         console.log(this.state)
     }
 
-    sendMessage = () => (event) => {
+    sendMessage = () => async (event) => {
         event.preventDefault()
         if(EmailValidator.validate(this.state.email)){
+
             alert('Kiitos viestistäsi, olemme vastaanottaneet sen. Käsittelemme viestit kerran viikossa.')
             return
         }
