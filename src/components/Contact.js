@@ -3,6 +3,7 @@ import {Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap'
 import insta from '../images/insta_icon.png'
 import email from '../images/email_icon.png'
 import EmailValidator from 'email-validator'
+import contactAPI from '../services/contact_API'
 
 export default class Contact extends React.Component {
     constructor() {
@@ -17,24 +18,23 @@ export default class Contact extends React.Component {
 
     modifyName = () => (event) => {
         this.setState({name: event.target.value})
-        console.log(this.state)
     }
 
     modifyEmail = () => (event) => {
         this.setState({email: event.target.value})
-        console.log(this.state)
     }
 
     modifyDetails = () => (event) => {
         this.setState({details: event.target.value})
-        console.log(this.state)
     }
 
     sendMessage = () => async (event) => {
         event.preventDefault()
         if(EmailValidator.validate(this.state.email)){
-
-            alert('Kiitos viestistäsi, olemme vastaanottaneet sen. Käsittelemme viestit kerran viikossa.')
+            const res = await contactAPI.sendMessage(this.state.name, this.state.email, this.state.details)
+            if(res){
+                alert('Kiitos viestistäsi, olemme vastaanottaneet sen. Käsittelemme viestit kerran viikossa.')
+            }
             return
         }
         alert('Antamasi email osoite on kelvoton')
