@@ -55,17 +55,11 @@ export default class Join extends React.Component {
 
     sendApplication = () => async (event) => {
         event.preventDefault()
+        console.log('send')
         if(EmailValidator.validate(this.state.email)){
+            console.log('send2')
             const res = await signupAPI
-                .sendMembershiApplication(
-                    this.state.firstname,
-                    this.state.lastname,
-                    this.state.address,
-                    this.state.birthday,
-                    this.state.phone,
-                    this.state.email,
-                    this.state.parentphone,
-                    this.state.details)
+                .sendMembershiApplication(this.state)
             if(res){
                 alert('Kiitos jäsenhakemuksestasi ' + this.state.firstname + ', olemme vastaanottaneet sen. Käsittelemme viestit kerran viikossa.')
             }
