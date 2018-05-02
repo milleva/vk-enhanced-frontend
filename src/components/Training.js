@@ -2,6 +2,7 @@ import React from 'react'
 import {Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap'
 import signupAPI from '../services/signup_API'
 import EmailValidator from 'email-validator'
+import Modal from './modals/PriceModal'
 import tenavaPhoto from '../images/tenava_valmennus.png'
 import pingisPhoto from '../images/ping_pong_valmennus.png'
 
@@ -154,7 +155,6 @@ export default class Training extends React.Component {
                             </p>
 
                             <div><button style={styleSheet.button} type="submit">Ilmoittaudu</button></div>
-
                         </form>
 
                     </div>
@@ -188,6 +188,7 @@ export default class Training extends React.Component {
                         </form>
                     </div>
 
+                    <Modal text="hinnat"/>
                 </Jumbotron>
             </Grid>
         )

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap'
 import logo from '../images/vk_logo.png'
-import Modal from './RulesModal'
+import Modal from './modals/RulesModal'
 import signupAPI from '../services/signup_API'
 import EmailValidator from 'email-validator'
 

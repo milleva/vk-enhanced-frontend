@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc30e0dc-9627-4bb3-bacb-242c084a2b1c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/modals/PriceModal.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/RulesModal.js" afterPath="$PROJECT_DIR$/src/components/modals/RulesModal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Join.js" afterPath="$PROJECT_DIR$/src/components/Join.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/News.js" afterPath="$PROJECT_DIR$/src/components/News.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Training.js" afterPath="$PROJECT_DIR$/src/components/Training.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/signup_API.js" afterPath="$PROJECT_DIR$/src/services/signup_API.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +35,8 @@
       <file leaf-file-name="Training.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Training.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1494">
-              <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+            <state relative-caret-position="774">
+              <caret line="190" column="26" lean-forward="false" selection-start-line="190" selection-start-column="26" selection-end-line="190" selection-end-column="26" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -67,8 +67,8 @@
       <file leaf-file-name="Join.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Join.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1098">
-              <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+            <state relative-caret-position="576">
+              <caret line="83" column="98" lean-forward="false" selection-start-line="83" selection-start-column="98" selection-end-line="83" selection-end-column="121" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -86,18 +86,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,10 +99,10 @@
         </entry>
       </file>
       <file leaf-file-name="RulesModal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/RulesModal.js">
+        <entry file="file://$PROJECT_DIR$/src/components/modals/RulesModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2250">
-              <caret line="126" column="75" lean-forward="false" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="75" />
+            <state relative-caret-position="270">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -122,7 +110,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup_API.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PriceModal.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/modals/PriceModal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup_API.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/signup_API.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
@@ -174,8 +174,9 @@
         <option value="$PROJECT_DIR$/src/components/Contact.js" />
         <option value="$PROJECT_DIR$/src/components/News.js" />
         <option value="$PROJECT_DIR$/src/components/Join.js" />
-        <option value="$PROJECT_DIR$/src/components/Training.js" />
         <option value="$PROJECT_DIR$/src/services/signup_API.js" />
+        <option value="$PROJECT_DIR$/src/components/Training.js" />
+        <option value="$PROJECT_DIR$/src/components/modals/PriceModal.js" />
       </list>
     </option>
   </component>
@@ -239,6 +240,13 @@
               <item name="vk-enhanced-frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="vk-enhanced-frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vk-enhanced-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vk-enhanced-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -256,6 +264,9 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/modals" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -292,12 +303,12 @@
       <workItem from="1524950732220" duration="831000" />
       <workItem from="1525007597404" duration="9917000" />
       <workItem from="1525039938620" duration="1928000" />
-      <workItem from="1525241087650" duration="6657000" />
+      <workItem from="1525241087650" duration="7638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49988000" />
+    <option name="totallyTimeSpent" value="50969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="228" y="104" width="1857" height="1092" extended-state="6" />
@@ -334,16 +345,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -403,7 +404,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RulesModal.js">
+    <entry file="file://$PROJECT_DIR$/src/components/modals/RulesModal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2250">
           <caret line="126" column="75" lean-forward="false" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="75" />
@@ -483,7 +484,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RulesModal.js">
+    <entry file="file://$PROJECT_DIR$/src/components/modals/RulesModal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2250">
           <caret line="126" column="75" lean-forward="false" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="75" />
@@ -570,7 +571,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RulesModal.js">
+    <entry file="file://$PROJECT_DIR$/src/components/modals/RulesModal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2304">
           <caret line="129" column="103" lean-forward="false" selection-start-line="129" selection-start-column="103" selection-end-line="129" selection-end-column="103" />
@@ -680,16 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RulesModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="126" column="75" lean-forward="false" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/News.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -698,30 +689,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Join.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Contact.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Training.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -741,6 +712,46 @@
         <state relative-caret-position="18">
           <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/modals/RulesModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Join.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="83" column="98" lean-forward="false" selection-start-line="83" selection-start-column="98" selection-end-line="83" selection-end-column="121" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Training.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="190" column="26" lean-forward="false" selection-start-line="190" selection-start-column="26" selection-end-line="190" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/modals/PriceModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
