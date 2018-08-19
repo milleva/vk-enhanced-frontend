@@ -115,15 +115,11 @@ export default class Training extends React.Component {
                                 Ma&nbsp;
                                 <label>
                                     <input type="radio" value="07-08" checked={this.state.valmennus.details.Ma === '07-08'} onChange={this.handleTrainingOptionChange('Ma')}/>
-                                    07-08
-                                </label>&nbsp;
-                                <label>
-                                    <input type="radio" value="08-09" checked={this.state.valmennus.details.Ma === '08-09'} onChange={this.handleTrainingOptionChange('Ma')}/>
-                                    08-09
+                                    07-08:80
                                 </label>&nbsp;
                                 <label>
                                     <input type="radio" value="09-10" checked={this.state.valmennus.details.Ma === '09-10'} onChange={this.handleTrainingOptionChange('Ma')}/>
-                                    09-10
+                                    8:30-10
                                 </label>&nbsp;
                                 Tekniikka
                             </p>
@@ -131,26 +127,22 @@ export default class Training extends React.Component {
                                 Ke&nbsp;
                                 <label>
                                     <input type="radio" value="07-08" checked={this.state.valmennus.details.Ke === '07-08'} onChange={this.handleTrainingOptionChange('Ke')}/>
-                                    07-08</label>&nbsp;
-                                <label>
-                                    <input type="radio" value="08-09" checked={this.state.valmennus.details.Ke === '08-09'} onChange={this.handleTrainingOptionChange('Ke')}/>
-                                    08-09</label>&nbsp;
+                                    07-8:30</label>&nbsp;
+                                
                                 <label>
                                     <input type="radio" value="09-10" checked={this.state.valmennus.details.Ke === '09-10'} onChange={this.handleTrainingOptionChange('Ke')}/>
-                                    09-10</label>&nbsp;
+                                    8:30-10</label>&nbsp;
                                 Fysiikka
                             </p>
                             <p>
                                 Pe&nbsp;
                                 <label>
                                     <input type="radio" value="07-08" checked={this.state.valmennus.details.Pe === '07-08'} onChange={this.handleTrainingOptionChange('Pe')}/>
-                                    07-08</label>&nbsp;
-                                <label>
-                                    <input type="radio" value="08-09" checked={this.state.valmennus.details.Pe === '08-09'} onChange={this.handleTrainingOptionChange('Pe')}/>
-                                    08-09</label>&nbsp;
+                                    07-8:30</label>&nbsp;
+                                
                                 <label>
                                     <input type="radio" value="09-10" checked={this.state.valmennus.details.Pe === '09-10'} onChange={this.handleTrainingOptionChange('Pe')}/>
-                                    09-10</label>&nbsp;
+                                    8:30-10</label>&nbsp;
                                 Vaihteleva teema
                             </p>
 
