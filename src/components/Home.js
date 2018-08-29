@@ -10,8 +10,8 @@ export default class Home extends React.Component {
         return(
             <Grid>
                 <Jumbotron>
+                    <h3><b>Löscaba #27</b> <a href="/events">ilmoittautuminen</a> on auki!</h3>
                     <h2 style={{fontFamily: 'Josefin Sans'}}>Sulkapalloseura Voittamisen Kulttuuri ry</h2>
-
                     <p>Seuran kotihalli sijaitsee osoitteessa Kulosaarentie 2, 00570 Helsinki.
                         Kulosaaren metroasemalta on n. 600 m. kävelymatka hallille.
                         Hallin edustalla on runsaasti pysäköintipaikkoja autolle.

@@ -16,4 +16,8 @@ const sendPongApplication = async (details) => {
     return res
 }
 
-export default {sendMembershiApplication, sendTrainingApplication, sendPongApplication}
+const sendLoscabaSignup = async (details) => {
+    return await Axios.post(`${baseUrl}/loscaba`, details)
+}
+
+export default {sendMembershiApplication, sendTrainingApplication, sendPongApplication, sendLoscabaSignup}
