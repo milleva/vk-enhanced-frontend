@@ -37,7 +37,7 @@ export default class Events extends React.Component {
                 <Jumbotron>
                     <h2 style={{fontFamily: 'Josefin Sans'}}>Kilpailut ja tapahtumat</h2>
     
-                    <h3 style={{fontFamily: 'Josefin Sans'}}>Löscaba #27 ilmoittautuminen:</h3>
+                    <h3 style={{fontFamily: 'Josefin Sans'}}>Löscaba #27 17.11.2018 ilmoittautuminen:</h3>
                     <form className="messageForm" onSubmit={this.sendSignup()}>
                         <p><input style={styleSheet.input} type="text" placeholder="nimi *" onChange={e => this.setState({nimi: e.target.value})} required/></p>
                         <p><input style={styleSheet.input} type="text" placeholder="sähköposti *" onChange={e => this.setState({sposti: e.target.value})} required/></p>
