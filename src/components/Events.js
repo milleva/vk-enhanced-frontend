@@ -38,7 +38,7 @@ export default class Events extends React.Component {
                     <h2 style={{fontFamily: 'Josefin Sans'}}>Kilpailut ja tapahtumat</h2>
     
                     {true && <div><h3 style={{fontFamily: 'Josefin Sans'}}>Löscaba #28 ilmoittautuminen:</h3>
-                        <h4>Aika: 24.4.2019 klo 9:00-22:00</h4>
+                        <h4>Aika: 27.4.2019 klo 9:00-22:00</h4>
                         <h4>Paikka: <a href="http://www.puhoscenter.fi/" target="_blank">Puhos Center Kulosaari</a></h4>
                         <form className="messageForm" onSubmit={this.sendSignup()}>
                             <p><input style={styleSheet.input} type="text" placeholder="nimi *" onChange={e => this.setState({nimi: e.target.value})} required/></p>
