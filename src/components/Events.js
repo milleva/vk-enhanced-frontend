@@ -14,7 +14,8 @@ export default class Events extends React.Component {
             nelinpeli: false,
             nelinpelipari: "",
             muuta: "",
-            consent: false
+            consent: false,
+            submittedWithin10Seconds: false
         }
     }
     
@@ -23,10 +24,9 @@ export default class Events extends React.Component {
         if(!this.state.sarja) {
             alert("Valitse vielä sarja")
         } else {
-            const res = signupAPI.sendLoscabaSignup(this.state)
-            if (res) {
-                alert(`Kiitos ilmottautumisestasi ${this.state.nimi}!`)
-            }
+            signupAPI.sendLoscabaSignup(this.state).catch((e) => {console.log("Problem sending loscaba signup: " + e)})
+            this.setState({submittedWithin10Seconds:true})
+            setTimeout(() => this.setState({submittedWithin10Seconds:false}), 10000)
         }
         console.log(this.state)
     }
@@ -41,10 +41,10 @@ export default class Events extends React.Component {
                         <h4>Aika: 27.4.2019 klo 9:00-22:00</h4>
                         <h4>Paikka: <a href="http://www.puhoscenter.fi/" target="_blank">Puhos Center Kulosaari</a></h4>
                         <form className="messageForm" onSubmit={this.sendSignup()}>
-                            <p><input style={styleSheet.input} type="text" placeholder="nimi *" onChange={e => this.setState({nimi: e.target.value})} required/></p>
-                            <p><input style={styleSheet.input} type="text" placeholder="sähköposti *" onChange={e => this.setState({sposti: e.target.value})} required/></p>
-                            <p><input style={styleSheet.input} type="text" placeholder="numero *" onChange={e => this.setState({numero: e.target.value})} required/></p>
-                            <p><input style={styleSheet.input} type="text" placeholder="osoite" onChange={e => this.setState({osoite: e.target.value})}/></p>
+                            <p><input style={styleSheet.input} type="text" placeholder="nimi *" value={this.state.nimi} onChange={e => this.setState({nimi: e.target.value})} required/></p>
+                            <p><input style={styleSheet.input} type="text" placeholder="sähköposti *" value={this.state.sposti} onChange={e => this.setState({sposti: e.target.value})} required/></p>
+                            <p><input style={styleSheet.input} type="text" placeholder="numero *" value={this.state.numero} onChange={e => this.setState({numero: e.target.value})} required/></p>
+                            <p><input style={styleSheet.input} type="text" placeholder="osoite" value={this.state.osoite} onChange={e => this.setState({osoite: e.target.value})}/></p>
                             <p><b>Sarja:</b></p>
                             <p>
                                 <label>
@@ -63,11 +63,11 @@ export default class Events extends React.Component {
                             </p>
                             <p><input type="checkbox" onChange={e => this.setState({nelinpeli: e.target.checked})}/>&nbsp;Nelinpeli&nbsp;<input style={styleSheet.input} type="text" placeholder="pari (ei pakol.)" onChange={e => this.setState({nelinpelipari: e.target.value})}/></p>
         
-                            <p><textarea style={styleSheet.input} type="text" placeholder="Muuta" rows="8" cols="45" onChange={e => this.setState({muuta: e.target.value})}/></p>
+                            <p><textarea style={styleSheet.input} type="text" placeholder="Muuta" rows="8" cols="45" value={this.state.muuta} onChange={e => this.setState({muuta: e.target.value})}/></p>
         
                             <p><input type="checkbox" onChange={e => this.setState({consent: e.target.checked})}/>&nbsp;Hyväksyn että VK saa käyttää tietojani sivuillaan kilpailuun liittyen (nimi, valokuvat, tulos…)</p>
                             <p style={{fontSize: "0.8em"}}>Huom! VK:lla on oikeus rajoittaa osallistujamäärää vapaasti.</p>
-                            <div><button style={styleSheet.button} type="submit">Lähetä</button></div>
+                            <div>{this.state.submittedWithin10Seconds ? ("Kiitos Ilmoittautumisesta " + this.state.nimi + "!") : <button style={styleSheet.button} type="submit" disabled={this.state.submittedWithin10Seconds}>Lähetä</button>}</div>
                         </form></div>}
                     
                     
