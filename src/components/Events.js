@@ -1,6 +1,10 @@
 import React from 'react'
 import {Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap'
 import signupAPI from '../services/signup_API'
+import s1 from '../images/scaba_1.jpg'
+import s2 from '../images/scaba_2.jpg'
+import s3 from '../images/scaba_3.jpg'
+import s4 from '../images/scaba_4.jpg'
 
 export default class Events extends React.Component {
     constructor(){
@@ -36,8 +40,8 @@ export default class Events extends React.Component {
             <Grid>
                 <Jumbotron>
                     <h2 style={{fontFamily: 'Josefin Sans'}}>Kilpailut ja tapahtumat</h2>
-    
-                    {true && <div><h3 style={{fontFamily: 'Josefin Sans'}}>Löscaba #28 ilmoittautuminen:</h3>
+                    {[s1, s2, s3, s4].map(i => <Image src={i} style={{maxWidth: "100%"}}/>)}
+                    {false && <div><h3 style={{fontFamily: 'Josefin Sans'}}>Löscaba #28 ilmoittautuminen:</h3>
                         <h4>Aika: 27.4.2019 klo 9:00-22:00</h4>
                         <h4>Paikka: <a href="http://www.puhoscenter.fi/" target="_blank">Puhos Center Kulosaari</a></h4>
                         <form className="messageForm" onSubmit={this.sendSignup()}>
